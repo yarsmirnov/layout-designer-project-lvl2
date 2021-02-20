@@ -28,7 +28,8 @@ function compile_sass (done) {
     .pipe(rename({
       basename: "style"
     }))
-    .pipe(gulp.dest('./src/css/'));
+    .pipe(gulp.dest('./src/css/'))
+    .pipe(browserSync.stream());;
 
   done();
 }
