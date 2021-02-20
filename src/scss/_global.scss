@@ -16,6 +16,7 @@ img {
 a {
   color: inherit;
   text-decoration-skip-ink: none;
+  cursor: pointer;
 }
 
 button {
@@ -28,14 +29,16 @@ button {
   cursor: pointer;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 30px;
   line-height: 45px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
@@ -43,14 +46,16 @@ h2 {
 }
 
 @media ($desctop) {
-  h1 {
+  h1,
+  .h1 {
     font-size: 60px;
     line-height: 90px;
     font-weight: bold;
     text-transform: uppercase;
   }
 
-  h2 {
+  h2,
+  .h2 {
     font-size: 38px;
     line-height: 57px;
     font-weight: bold;
@@ -74,4 +79,18 @@ h2 {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
+}
+
+.container {
+  max-width: 1160px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media screen and ($desctop) {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

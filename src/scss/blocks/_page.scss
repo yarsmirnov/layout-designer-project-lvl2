@@ -1,0 +1,9 @@
+@import "variables";
+
+.page {
+  font-size: $fz-1;
+  line-height: 1.5em;
+  font-family: $main-font;
+  color: $white;
+  background-color: $dark;
+}

@@ -9,6 +9,6 @@
   }
 }
 
-@include font-face(Roboto, 400, normal, roboto-bold);
+@include font-face(Roboto, 400, normal, roboto-regular);
 @include font-face(Roboto, 500, normal, roboto-medium);
-@include font-face(Roboto, 700, normal, roboto-regular);
+@include font-face(Roboto, 700, normal, roboto-bold);
