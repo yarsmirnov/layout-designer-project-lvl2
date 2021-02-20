@@ -1,8 +1,9 @@
-@import "variables"
+@import "variables";
 
 html,
 body {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -27,6 +28,20 @@ button {
   cursor: pointer;
 }
 
+h1 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 @media ($desctop) {
   h1 {
     font-size: 60px;
@@ -37,23 +52,7 @@ button {
 
   h2 {
     font-size: 38px;
-    line-height: 57;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
-
-@media ($mobile) {
-  h1 {
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    font-size: 18px;
-    line-height: 27;
+    line-height: 57px;
     font-weight: bold;
     text-transform: uppercase;
   }
