@@ -1,0 +1,102 @@
+.intro {
+  padding: 200px 0;
+
+  background-image: url("../../images/banner.png");
+  background-position: center;
+  background-size: cover;
+
+  @media screen and ($desctop) {
+    padding-top: 197px;
+  }
+
+  & .h1 {
+    text-align: center;
+    margin: 0 0 2px;
+    padding: 47px 0 0;
+
+    @media screen and ($desctop) {
+      padding-top: 0;
+    }
+  }
+
+  & .h2 {
+    text-align: center;
+    margin: 0 0 15px;
+    padding: 0;
+
+    @media screen and ($desctop) {
+      margin-bottom: 33px;
+    }
+  }
+}
+
+.access-form {
+  max-width: 570px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &-text {
+    margin: 0 0 16px;
+    padding: 0 0;
+
+    text-align: center;
+  }
+
+  &-columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media screen and ($desctop) {
+      flex-direction: row;
+    }
+  }
+
+  &-label {
+    width: 100%;
+
+    @media screen and ($desctop) {
+      max-width: 273px;
+
+      & + & {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  &-input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    min-height: 50px;
+    margin-bottom: 1.5rem;
+    padding-left: 20px;
+
+    background-color: transparent;
+    border: 2px solid $dark-gray;
+    border-radius: 3px;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  &-submit {
+    width: 100%;
+    padding: 21px 30px 22px;
+    border-radius: 5px;
+
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+
+    text-transform: uppercase;
+    color: $white;
+
+
+    background-color: $green;
+  }
+}

@@ -1,10 +1,13 @@
 @import "../variables";
 
 .page-header {
-  padding: 25px 0 30px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
 
-  @media screen and ($desctop) {
-    padding-top: 25px;
+  & .container {
+    box-sizing: content-box;
   }
 }
 
