@@ -89,18 +89,17 @@ h2,
   padding-left: 20px; }
   @media screen and (min-width: 1200px) {
     .container {
+      box-sizing: border-box;
       max-width: 1200px;
       margin-right: auto;
-      margin-left: auto;
-      padding-right: 0;
-      padding-left: 0; } }
+      margin-left: auto; } }
 
 .page {
   font-size: 16px;
   line-height: 1.5em;
   font-family: "Roboto", "Georgia", sans-serif;
   color: #FFFFFF;
-  background-color: #3C3B3D; }
+  background-color: #08020D; }
 
 .page-header {
   padding: 25px 0 30px; }
@@ -116,7 +115,8 @@ h2,
 .main-logo {
   display: flex;
   align-items: center;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  text-decoration: none; }
   @media screen and (min-width: 1200px) {
     .main-logo {
       margin-right: 88px; } }
@@ -189,6 +189,8 @@ h2,
       padding-bottom: 42px; } }
   @media screen and (min-width: 1200px) {
     .page-footer-links > .container {
+      box-sizing: content-box;
+      padding: 0 20px 0 60px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; } }
@@ -248,3 +250,61 @@ h2,
       margin-bottom: 0; }
     .footer-nav-item a {
       text-decoration: none; }
+
+.similar-artists {
+  padding-top: 100px;
+  padding-bottom: 75px; }
+  @media screen and (min-width: 1200px) {
+    .similar-artists {
+      padding-right: 20px;
+      padding-left: 20px; } }
+  .similar-artists .h2 {
+    margin-top: 0;
+    margin-bottom: 48px; }
+    @media screen and (min-width: 1200px) {
+      .similar-artists .h2 {
+        margin-bottom: 50px; } }
+
+.similar-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.similar-item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 0 50px 25px 0;
+  padding: 0; }
+  .similar-item:nth-of-type(2n) {
+    margin-right: 0; }
+    @media screen and (min-width: 1200px) {
+      .similar-item:nth-of-type(2n) {
+        margin-right: 50px; } }
+  @media screen and (min-width: 1200px) {
+    .similar-item:nth-of-type(4n) {
+      margin-right: 0; } }
+
+.similar-image {
+  margin-bottom: 21px; }
+  @media screen and (min-width: 1200px) {
+    .similar-image {
+      width: 250px;
+      height: 250px; } }
+
+.similar-info {
+  text-align: center; }
+  .similar-info-artist {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .similar-info-fans {
+    margin: 0;
+    padding: 0; }
+    .similar-info-fans-count {
+      display: block;
+      width: 100%; }
+      @media screen and (min-width: 1200px) {
+        .similar-info-fans-count {
+          display: inline; } }

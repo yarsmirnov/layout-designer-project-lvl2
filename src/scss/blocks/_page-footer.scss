@@ -19,6 +19,8 @@
 
   & > .container {
     @media screen and ($desctop) {
+      box-sizing: content-box;
+      padding: 0 20px 0 60px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;

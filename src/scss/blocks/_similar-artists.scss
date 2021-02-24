@@ -1,0 +1,80 @@
+.similar-artists {
+  padding-top: 100px;
+  padding-bottom: 75px;
+
+  @media screen and ($desctop) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  & .h2 {
+    margin-top: 0;
+    margin-bottom: 48px;
+
+    @media screen and ($desctop) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.similar-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.similar-item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 0 50px 25px 0;
+  padding: 0;
+
+  &:nth-of-type(2n) {
+    margin-right: 0;
+
+    @media screen and ($desctop) {
+      margin-right: 50px;
+    }
+  }
+
+  &:nth-of-type(4n) {
+    @media screen and ($desctop) {
+      margin-right: 0;
+    }
+  }
+}
+
+.similar-image {
+  margin-bottom: 21px;
+
+  @media screen and ($desctop) {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.similar-info {
+  text-align: center;
+
+  &-artist {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &-fans {
+    margin: 0;
+    padding: 0;
+
+    &-count {
+      display: block;
+      width: 100%;
+      @media screen and ($desctop) {
+        display: inline;
+      }
+    }
+  }
+}
