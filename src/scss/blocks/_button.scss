@@ -10,4 +10,8 @@
 
   border: 1px solid #CACACA;
   border-radius: 5px;
+
+  @media screen and ($desctop) {
+    padding-bottom: 17px;
+  }
 }
