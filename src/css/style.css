@@ -177,7 +177,7 @@ h2,
 
 .page-footer {
   padding: 62px 0 40px;
-  background-image: linear-gradient(to right, #5328A1, #F89202);
+  background-image: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
   background-color: #5328A1; }
   @media screen and (min-width: 1240px) {
     .page-footer {
@@ -193,7 +193,7 @@ h2,
   @media screen and (min-width: 1240px) {
     .page-footer-links > .container {
       box-sizing: content-box;
-      padding: 0 20px 0 60px;
+      padding: 0 20px 0 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; } }
@@ -207,8 +207,8 @@ h2,
   .page-footer-links dt {
     margin: 0 0 15px;
     padding: 0;
-    font-size: 38px;
-    line-height: 57px;
+    font-size: 18px;
+    line-height: 27px;
     font-weight: bold;
     text-transform: uppercase; }
     @media screen and (min-width: 1240px) {
@@ -235,6 +235,10 @@ h2,
     margin-right: 24px; }
     .social-list-item a {
       text-decoration: none; }
+
+@media screen and (min-width: 1240px) {
+  .footer-nav-container {
+    padding: 0; } }
 
 .footer-nav {
   margin: 0;
