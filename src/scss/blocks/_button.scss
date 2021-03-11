@@ -25,4 +25,50 @@
 
     background-color: $brown;
   }
+
+
+  &-with-icon {
+    position: relative;
+
+    width: 200px;
+    padding: 21px 30px 22px 67px;
+
+    font-size: 12.8px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $white;
+
+    border: none;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 31px;
+
+      width: 20px;
+      height: 20px;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &-mix {
+    background-color: $purple;
+
+    &::before {
+      background-image: url("../images/play-button.svg");
+      background-position: center;
+    }
+  }
+
+  &-favorite {
+    background-color: $brown;
+
+    &::before {
+      background-image: url("../images/heart.svg");
+      background-position: center;
+    }
+  }
 }

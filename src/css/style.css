@@ -473,6 +473,33 @@ h2,
     text-transform: capitalize;
     border: none;
     background-color: #95390C; }
+  .btn-with-icon {
+    position: relative;
+    width: 200px;
+    padding: 21px 30px 22px 67px;
+    font-size: 12.8px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none; }
+    .btn-with-icon::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 31px;
+      width: 20px;
+      height: 20px;
+      transform: translateY(-50%); }
+  .btn-mix {
+    background-color: #5328A1; }
+    .btn-mix::before {
+      background-image: url("../images/play-button.svg");
+      background-position: center; }
+  .btn-favorite {
+    background-color: #95390C; }
+    .btn-favorite::before {
+      background-image: url("../images/heart.svg");
+      background-position: center; }
 
 .app {
   margin-bottom: 100px;
@@ -514,3 +541,43 @@ h2,
     margin-bottom: 16px; }
     .app-text:last-of-type {
       margin-bottom: 0; }
+
+.artist {
+  padding: 224px 0 200px; }
+  @media screen and (min-width: 1240px) {
+    .artist {
+      padding: 248px 0 223px; } }
+  @media screen and (min-width: 1240px) {
+    .artist > .container {
+      padding: 0; } }
+  .artist-morten-harket {
+    background-image: url("../images/Morten Harket.png");
+    background-position: center;
+    background-size: cover; }
+  .artist-title {
+    margin: 0;
+    margin-bottom: 16px; }
+    @media screen and (min-width: 1240px) {
+      .artist-title {
+        margin-bottom: 17px; } }
+  .artist-fans-count {
+    margin: 0;
+    margin-bottom: 49px; }
+  .artist-actions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    @media screen and (min-width: 1240px) {
+      .artist-actions {
+        flex-direction: row; } }
+    .artist-actions > * {
+      margin-bottom: 24px; }
+      @media screen and (min-width: 1240px) {
+        .artist-actions > * {
+          margin-right: 24px;
+          margin-bottom: 0; } }
+    .artist-actions:last-child {
+      margin-bottom: 0; }
+      @media screen and (min-width: 1240px) {
+        .artist-actions:last-child {
+          margin-right: 0; } }
