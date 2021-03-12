@@ -581,3 +581,49 @@ h2,
       @media screen and (min-width: 1240px) {
         .artist-actions:last-child {
           margin-right: 0; } }
+
+.popular-tracks {
+  padding-top: 100px; }
+  @media screen and (min-width: 1240px) {
+    .popular-tracks > .container {
+      padding: 0; } }
+  .popular-tracks-title {
+    margin: 0;
+    margin-bottom: 48px; }
+  @media screen and (min-width: 1240px) {
+    .popular-tracks-list {
+      display: flex;
+      flex-wrap: wrap; } }
+  .popular-tracks-item {
+    display: flex;
+    margin-bottom: 25px; }
+    @media screen and (min-width: 1240px) {
+      .popular-tracks-item {
+        width: calc(50% - 50px);
+        margin-right: 50px; } }
+    @media screen and (min-width: 1240px) {
+      .popular-tracks-item:nth-of-type(even) {
+        margin-right: 0; } }
+    .popular-tracks-item-img {
+      align-self: flex-start;
+      margin-right: 15px; }
+    .popular-tracks-item-body {
+      flex-grow: 1;
+      font-size: 13px;
+      line-height: 19px; }
+    .popular-tracks-item-title {
+      margin: 0;
+      padding-top: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 19px;
+      text-transform: uppercase; }
+    .popular-tracks-item-info {
+      display: flex; }
+    .popular-tracks-item-artist {
+      font-style: normal; }
+    .popular-tracks-item-duration {
+      position: relative;
+      top: -10px;
+      margin: 0;
+      margin-left: auto; }

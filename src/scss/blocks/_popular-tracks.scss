@@ -1,0 +1,75 @@
+.popular-tracks {
+  padding-top: 100px;
+
+  & > .container {
+    @media screen and ($desctop) {
+      padding: 0;
+    }
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  &-list {
+    @media screen and ($desctop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &-item {
+    display: flex;
+
+    margin-bottom: 25px;
+
+    @media screen and ($desctop) {
+      width: calc(50% - 50px);
+      margin-right: 50px;
+    }
+
+    &:nth-of-type(even) {
+      @media screen and ($desctop) {
+        margin-right: 0;
+      }
+    }
+
+    &-img {
+      align-self: flex-start;
+      margin-right: 15px;
+    }
+
+    &-body {
+      flex-grow: 1;
+      font-size: 13px;
+      line-height: 19px;
+    }
+
+    &-title {
+      margin: 0;
+      padding-top: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 19px;
+
+      text-transform: uppercase;
+    }
+
+    &-info {
+      display: flex;
+    }
+
+    &-artist {
+      font-style: normal;
+    }
+
+    &-duration {
+      position:relative;
+      top: -10px;
+      margin: 0;
+      margin-left: auto;
+    }
+  }
+}
+
