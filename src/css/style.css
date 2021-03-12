@@ -265,6 +265,9 @@ h2,
     .similar-artists {
       padding-right: 20px;
       padding-left: 20px; } }
+  @media screen and (min-width: 1240px) {
+    .similar-artists > .container {
+      padding: 0; } }
   .similar-artists .h2 {
     margin-top: 0;
     margin-bottom: 48px; }
@@ -627,3 +630,43 @@ h2,
       top: -10px;
       margin: 0;
       margin-left: auto; }
+
+.discography {
+  padding-top: 100px; }
+  @media screen and (min-width: 1240px) {
+    .discography > .container {
+      padding: 0; } }
+  .discography-title {
+    margin: 0;
+    margin-bottom: 48px; }
+  .discography-list {
+    display: flex;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 1240px) {
+      .discography-list {
+        margin-bottom: -24px; } }
+  .discography-item {
+    margin-right: 50px;
+    margin-bottom: 24px;
+    width: calc(50% - $mr); }
+    @media screen and (min-width: 1240px) {
+      .discography-item {
+        width: calc(25% - 3 * $mr); } }
+    .discography-item:nth-of-type(even) {
+      margin-right: 0; }
+      @media screen and (min-width: 1240px) {
+        .discography-item:nth-of-type(even) {
+          margin-right: 50px; } }
+    .discography-item:nth-of-type(4n) {
+      margin-right: 0; }
+    .discography-item-image {
+      margin-bottom: 19px; }
+      @media screen and (min-width: 1240px) {
+        .discography-item-image {
+          width: 250px;
+          height: 250px; } }
+    .discography-item-title {
+      margin: 0;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: capitalize; }

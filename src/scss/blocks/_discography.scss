@@ -1,0 +1,62 @@
+.discography {
+  padding-top: 100px;
+
+  & > .container {
+    @media screen and ($desctop) {
+      padding: 0;
+    }
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and ($desctop) {
+      margin-bottom: -24px;
+    }
+  }
+
+  &-item {
+    $mr: 50px;
+    margin-right: $mr;
+    margin-bottom: 24px;
+    width: calc(50% - $mr);
+
+    @media screen and ($desctop) {
+      width: calc(25% - 3 * $mr);
+    }
+
+    &:nth-of-type(even) {
+      margin-right: 0;
+
+      @media screen and ($desctop) {
+        margin-right: $mr;
+      }
+    }
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+
+    &-image {
+      margin-bottom: 19px;
+
+      @media screen and ($desctop) {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    &-title {
+      margin: 0;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: capitalize;
+    }
+  }
+}
