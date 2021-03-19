@@ -12,9 +12,15 @@
 }
 
 .main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
   @media screen and ($desctop) {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
   }
 }
 
@@ -44,7 +50,7 @@
 }
 
 .site-nav {
-  margin: 0 0 19px;
+  margin: 0 0 16px;
   padding: 0;
   list-style: none;
 
@@ -80,6 +86,7 @@
 }
 
 .main-nav-search-field {
+  align-self: stretch;
   @media screen and ($desctop) {
     min-width: 248px;
     margin-left: auto;

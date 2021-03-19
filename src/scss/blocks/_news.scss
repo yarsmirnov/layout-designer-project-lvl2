@@ -19,7 +19,7 @@
 }
 
 .news-item {
-  margin-bottom: 64px;
+  margin-bottom: 80px;
 
   @media screen and ($desctop) {
     display: flex;
@@ -77,7 +77,7 @@
 
   &-footer {
     display: flex;
-    margin-bottom: 48px;
+    margin-bottom: 61px;
 
     font-size: 13px;
     line-height: 19px;
@@ -92,9 +92,16 @@
   }
 
   &-author {
-    color: $orange;
+    margin: 0;
+    padding: 0;
     margin-right: 15px;
     font-style: normal;
+    color: $orange;
+  }
+
+  &-time {
+    margin: 0;
+    padding: 0;
   }
 
   &-button {

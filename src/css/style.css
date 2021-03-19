@@ -149,10 +149,16 @@ h2,
   .page-header .container {
     box-sizing: content-box; }
 
-@media screen and (min-width: 1240px) {
-  .main-nav {
-    display: flex;
-    align-items: start; } }
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  @media screen and (min-width: 1240px) {
+    .main-nav {
+      display: flex;
+      align-items: flex-start; } }
 
 .main-logo {
   display: flex;
@@ -172,7 +178,7 @@ h2,
     text-transform: uppercase; }
 
 .site-nav {
-  margin: 0 0 19px;
+  margin: 0 0 16px;
   padding: 0;
   list-style: none; }
   @media screen and (min-width: 1240px) {
@@ -198,10 +204,12 @@ h2,
       text-decoration: none;
       text-transform: uppercase; }
 
-@media screen and (min-width: 1240px) {
-  .main-nav-search-field {
-    min-width: 248px;
-    margin-left: auto; } }
+.main-nav-search-field {
+  align-self: stretch; }
+  @media screen and (min-width: 1240px) {
+    .main-nav-search-field {
+      min-width: 248px;
+      margin-left: auto; } }
 
 .main-nav-search-input {
   display: block;
@@ -230,7 +238,7 @@ h2,
 
 .page-footer-links {
   margin: 0;
-  padding: 0 0 41px; }
+  padding: 0 0 42px; }
   @media screen and (min-width: 1240px) {
     .page-footer-links {
       box-sizing: content-box;
@@ -253,7 +261,7 @@ h2,
         width: 270px; }
         .page-footer-links-group:nth-of-type(4) {
           margin-right: none; } }
-  .page-footer-links dt {
+  .page-footer-links h3 {
     margin: 0 0 15px;
     padding: 0;
     font-size: 18px;
@@ -261,12 +269,9 @@ h2,
     font-weight: bold;
     text-transform: uppercase; }
     @media screen and (min-width: 1240px) {
-      .page-footer-links dt {
+      .page-footer-links h3 {
         font-size: 18px;
         line-height: 27px; } }
-  .page-footer-links dd {
-    margin: 0;
-    padding: 0; }
   .page-footer-links-list {
     margin: 0;
     padding: 0;
@@ -289,9 +294,17 @@ h2,
   .footer-nav-container {
     padding: 0; } }
 
+.page-footer-links-list-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .page-footer-links-list-address p {
+    margin: 0;
+    padding: 0; }
+
 .footer-nav {
   margin: 0;
-  padding: 40px 0 7px;
+  padding: 40px 0 8px;
   list-style: none; }
   @media screen and (min-width: 1240px) {
     .footer-nav {
@@ -305,6 +318,7 @@ h2,
     .footer-nav-item:last-of-type {
       margin-bottom: 0; }
     .footer-nav-item a {
+      display: block;
       text-decoration: none; }
 
 .similar-artists {
@@ -548,7 +562,7 @@ h2,
       padding: 0; } }
 
 .news-item {
-  margin-bottom: 64px; }
+  margin-bottom: 80px; }
   @media screen and (min-width: 1240px) {
     .news-item {
       display: flex;
@@ -588,7 +602,7 @@ h2,
       margin-bottom: 16px; }
   .news-item-footer {
     display: flex;
-    margin-bottom: 48px;
+    margin-bottom: 61px;
     font-size: 13px;
     line-height: 19px; }
     @media screen and (min-width: 1240px) {
@@ -597,9 +611,14 @@ h2,
   .news-item-author-img {
     margin-right: 16px; }
   .news-item-author {
-    color: #F89202;
+    margin: 0;
+    padding: 0;
     margin-right: 15px;
-    font-style: normal; }
+    font-style: normal;
+    color: #F89202; }
+  .news-item-time {
+    margin: 0;
+    padding: 0; }
   .news-item-button {
     align-self: flex-start; }
 
@@ -646,10 +665,12 @@ h2,
 
 .artist {
   padding: 200px 0; }
-  @media screen and (min-width: 1240px) {
-    .artist > .container {
-      padding: 0;
-      padding-top: 47px; } }
+  .artist > .container {
+    padding-top: 23px; }
+    @media screen and (min-width: 1240px) {
+      .artist > .container {
+        padding: 0;
+        padding-top: 47px; } }
   .artist-morten-harket {
     background-image: url("../images/Morten Harket.png");
     background-position: center;
@@ -666,20 +687,21 @@ h2,
   .artist-actions {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 25px; }
     @media screen and (min-width: 1240px) {
       .artist-actions {
         flex-direction: row; } }
     .artist-actions > * {
-      margin-bottom: 24px; }
+      margin-bottom: 26px; }
       @media screen and (min-width: 1240px) {
         .artist-actions > * {
           margin-right: 24px;
           margin-bottom: 0; } }
-    .artist-actions:last-child {
+    .artist-actions .btn:last-child {
       margin-bottom: 0; }
       @media screen and (min-width: 1240px) {
-        .artist-actions:last-child {
+        .artist-actions .btn:last-child {
           margin-right: 0; } }
 
 .popular-tracks {
@@ -708,6 +730,10 @@ h2,
       align-self: flex-start;
       margin-right: 15px; }
     .popular-tracks-item-body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       flex-grow: 1;
       font-size: 13px;
       line-height: 19px; }
@@ -721,10 +747,12 @@ h2,
     .popular-tracks-item-info {
       display: flex; }
     .popular-tracks-item-artist {
-      font-style: normal; }
+      font-style: normal;
+      text-decoration: none; }
     .popular-tracks-item-duration {
-      position: relative;
-      top: -10px;
+      position: absolute;
+      top: 20px;
+      right: 0;
       margin: 0;
       margin-left: auto; }
 

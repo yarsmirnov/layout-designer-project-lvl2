@@ -41,6 +41,10 @@
     }
 
     &-body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       flex-grow: 1;
       font-size: 13px;
       line-height: 19px;
@@ -62,11 +66,13 @@
 
     &-artist {
       font-style: normal;
+      text-decoration: none;
     }
 
     &-duration {
-      position:relative;
-      top: -10px;
+      position: absolute;
+      top: 20px;
+      right: 0;
       margin: 0;
       margin-left: auto;
     }

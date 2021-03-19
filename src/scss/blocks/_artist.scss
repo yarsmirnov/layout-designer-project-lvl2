@@ -2,6 +2,8 @@
   padding: 200px 0;
 
   & > .container {
+    padding-top: 23px;
+
     @media screen and ($desctop) {
       padding: 0;
       padding-top: 47px;
@@ -32,13 +34,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-bottom: 25px;
 
     @media screen and ($desctop) {
       flex-direction: row;
     }
 
     & > * {
-      margin-bottom: 24px;
+      margin-bottom: 26px;
 
       @media screen and ($desctop) {
         margin-right: 24px;
@@ -46,7 +49,7 @@
       }
     }
 
-    &:last-child {
+    & .btn:last-child {
       margin-bottom: 0;
 
       @media screen and ($desctop) {

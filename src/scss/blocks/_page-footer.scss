@@ -24,7 +24,7 @@
 
 .page-footer-links {
   margin: 0;
-  padding: 0 0 41px;
+  padding: 0 0 42px;
 
   @media screen and ($desctop) {
     box-sizing: content-box;
@@ -57,7 +57,7 @@
     }
   }
 
-  & dt {
+  & h3 {
     margin: 0 0 15px;
     padding: 0;
 
@@ -70,11 +70,6 @@
       font-size: 18px;
       line-height: 27px;
     }
-  }
-
-  & dd {
-    margin: 0;
-    padding: 0;
   }
 
   &-list {
@@ -112,9 +107,20 @@
   }
 }
 
+.page-footer-links-list-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .footer-nav {
   margin: 0;
-  padding: 40px 0 7px;
+  padding: 40px 0 8px;
 
   list-style: none;
 
@@ -135,6 +141,7 @@
   }
 
     & a {
+      display: block;
       text-decoration: none;
     }
   }
