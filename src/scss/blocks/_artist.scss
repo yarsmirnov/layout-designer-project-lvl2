@@ -1,9 +1,5 @@
 .artist {
-  padding: 224px 0 200px;
-
-  @media screen and ($desctop) {
-    padding: 248px 0 223px;
-  }
+  padding: 200px 0;
 
   & > .container {
     @media screen and ($desctop) {
