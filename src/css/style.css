@@ -488,12 +488,13 @@ h2,
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
+      font-weight: 400;
       text-align: center;
       text-transform: uppercase; }
       @media screen and (min-width: 1240px) {
         .pricing-item > h3 {
           font-size: 24px;
-          line-height: 45px; } }
+          line-height: 36px; } }
     .pricing-item-free {
       background-image: url("../images/subscribe_1.png"); }
     .pricing-item-standart {
