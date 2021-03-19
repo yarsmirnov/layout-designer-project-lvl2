@@ -95,6 +95,53 @@ h2,
       margin-right: auto;
       margin-left: auto; } }
 
+.btn {
+  box-sizing: border-box;
+  padding: 16px 29px 16px 30px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  border: 1px solid #CACACA;
+  border-radius: 5px; }
+  @media screen and (min-width: 1240px) {
+    .btn {
+      padding-bottom: 17px; } }
+  .btn-rounded {
+    border-radius: 32px;
+    padding: 16px 42px 19px 40px;
+    font-size: 12.8px;
+    text-transform: capitalize;
+    border: none;
+    background-color: #95390C; }
+  .btn-with-icon {
+    position: relative;
+    width: 200px;
+    padding: 21px 30px 22px 67px;
+    font-size: 12.8px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none; }
+    .btn-with-icon::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 31px;
+      width: 20px;
+      height: 20px;
+      transform: translateY(-50%); }
+  .btn-mix {
+    background-color: #5328A1; }
+    .btn-mix::before {
+      background-image: url("../images/play-button.svg");
+      background-position: center; }
+  .btn-favorite {
+    background-color: #95390C; }
+    .btn-favorite::before {
+      background-image: url("../images/heart.svg");
+      background-position: center; }
+
 .page {
   font-size: 16px;
   line-height: 1.5em;
@@ -388,6 +435,95 @@ h2,
     color: #FFFFFF;
     background-color: #34C176; }
 
+.pricing {
+  padding-top: 100px; }
+  @media screen and (min-width: 1240px) {
+    .pricing .container {
+      padding: 0; } }
+  .pricing-title {
+    margin: 0;
+    margin-bottom: 49px;
+    text-align: center; }
+    @media screen and (min-width: 1240px) {
+      .pricing-title {
+        margin-bottom: 51px; } }
+  .pricing-list {
+    margin-bottom: 39px; }
+    @media screen and (min-width: 1240px) {
+      .pricing-list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -12px; } }
+  .pricing-item {
+    margin-bottom: 50px;
+    padding: 15px 1.5rem 65px;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    @media screen and (min-width: 1240px) {
+      .pricing-item {
+        box-sizing: border-box;
+        width: 367px; } }
+    .pricing-item:last-of-type {
+      margin-bottom: 0; }
+      @media screen and (min-width: 1240px) {
+        .pricing-item:last-of-type {
+          margin-bottom: 50px; } }
+    .pricing-item > h3 {
+      margin: 0;
+      margin-bottom: 200px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase; }
+      @media screen and (min-width: 1240px) {
+        .pricing-item > h3 {
+          font-size: 24px;
+          line-height: 45px; } }
+    .pricing-item-free {
+      background-image: url("../images/subscribe_1.png"); }
+    .pricing-item-standart {
+      background-image: url("../images/subscribe_2.png"); }
+    .pricing-item-premium {
+      background-image: url("../images/subscribe_3.png"); }
+  .pricing-price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 44px; }
+  .pricing-value {
+    margin-right: 16px;
+    font-size: 64px;
+    line-height: 60px;
+    text-align: center; }
+  .pricing-currency {
+    margin-top: 7px;
+    font-size: 32px;
+    line-height: 1em; }
+  .pricing-btn {
+    display: block;
+    margin-bottom: 64px;
+    padding: 19px 29px 21px 29px;
+    font-size: 16px;
+    line-height: 150%; }
+  .pricing-footer {
+    margin: 0;
+    padding: 0;
+    font-size: 12.8px;
+    line-height: 150%;
+    text-align: center; }
+  .pricing-description {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center; }
+
 .news {
   padding-top: 100px; }
   .news-title {
@@ -456,53 +592,6 @@ h2,
     font-style: normal; }
   .news-item-button {
     align-self: flex-start; }
-
-.btn {
-  box-sizing: border-box;
-  padding: 16px 29px 16px 30px;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 19px;
-  border: 1px solid #CACACA;
-  border-radius: 5px; }
-  @media screen and (min-width: 1240px) {
-    .btn {
-      padding-bottom: 17px; } }
-  .btn-rounded {
-    border-radius: 32px;
-    padding: 16px 42px 19px 40px;
-    font-size: 12.8px;
-    text-transform: capitalize;
-    border: none;
-    background-color: #95390C; }
-  .btn-with-icon {
-    position: relative;
-    width: 200px;
-    padding: 21px 30px 22px 67px;
-    font-size: 12.8px;
-    text-align: left;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    border: none; }
-    .btn-with-icon::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 31px;
-      width: 20px;
-      height: 20px;
-      transform: translateY(-50%); }
-  .btn-mix {
-    background-color: #5328A1; }
-    .btn-mix::before {
-      background-image: url("../images/play-button.svg");
-      background-position: center; }
-  .btn-favorite {
-    background-color: #95390C; }
-    .btn-favorite::before {
-      background-image: url("../images/heart.svg");
-      background-position: center; }
 
 .app {
   margin-bottom: 100px;

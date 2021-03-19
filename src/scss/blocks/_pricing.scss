@@ -1,0 +1,130 @@
+.pricing {
+  padding-top: 100px;
+
+  & .container {
+    @media screen and ($desctop) {
+      padding: 0;
+    }
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 49px;
+    text-align: center;
+
+    @media screen and ($desctop) {
+      margin-bottom: 51px;
+    }
+  }
+
+  &-list {
+    margin-bottom: 39px;
+
+    @media screen and ($desctop) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: -12px;
+    }
+  }
+
+  &-item {
+    margin-bottom: 50px;
+    padding: 15px 1.5rem 65px;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and ($desctop) {
+      box-sizing: border-box;
+      width: 367px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+
+      @media screen and ($desctop) {
+        margin-bottom: 50px;
+      }
+    }
+
+    & > h3 {
+      margin: 0;
+      margin-bottom: 200px;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      @media screen and ($desctop) {
+        font-size: 24px;
+        line-height: 45px;
+      }
+    }
+
+    &-free {
+      background-image: url("../images/subscribe_1.png");
+    }
+
+    &-standart {
+      background-image: url("../images/subscribe_2.png");
+    }
+
+    &-premium {
+      background-image: url("../images/subscribe_3.png");
+    }
+  }
+
+  &-price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 44px;
+  }
+
+  &-value {
+    margin-right: 16px;
+    font-size: 64px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  &-currency {
+    margin-top: 7px;
+    font-size: 32px;
+    line-height: 1em;
+  }
+
+  &-btn {
+    display: block;
+    margin-bottom: 64px;
+    padding: 19px 29px 21px 29px;
+
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &-footer {
+    margin: 0;
+    padding: 0;
+    font-size: 12.8px;
+    line-height: 150%;
+
+    text-align: center;
+  }
+
+  &-description {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+  }
+}
