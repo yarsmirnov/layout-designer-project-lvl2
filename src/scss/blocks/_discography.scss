@@ -9,7 +9,7 @@
 
   &-title {
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   &-list {
@@ -25,10 +25,10 @@
     $mr: 50px;
     margin-right: $mr;
     margin-bottom: 24px;
-    width: calc(50% - $mr);
+    width: calc(50% - #{$mr});
 
     @media screen and ($desctop) {
-      width: calc(25% - 3 * $mr);
+      width: calc(25% - #{$mr});
     }
 
     &:nth-of-type(even) {
