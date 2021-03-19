@@ -222,6 +222,12 @@ h2,
     color: #757575;
     text-transform: uppercase; }
 
+.border-bottom {
+  border-bottom: 1px solid #FFFFFF; }
+  @media screen and (min-width: 1240px) {
+    .border-bottom > .container {
+      padding: 0; } }
+
 .page-footer {
   padding: 62px 0 40px;
   background-image: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
@@ -232,11 +238,15 @@ h2,
 
 .page-footer-links {
   margin: 0;
-  padding: 0 0 43px;
-  border-bottom: 1px solid #FFFFFF; }
+  padding: 0 0 43px; }
   @media screen and (min-width: 1240px) {
     .page-footer-links {
-      padding-bottom: 42px; } }
+      box-sizing: content-box;
+      padding: 0;
+      padding-bottom: 42px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
   @media screen and (min-width: 1240px) {
     .page-footer-links > .container {
       box-sizing: content-box;
@@ -244,12 +254,12 @@ h2,
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; } }
-  .page-footer-links-gpoup {
+  .page-footer-links-group {
     margin-bottom: 31px; }
     @media screen and (min-width: 1240px) {
-      .page-footer-links-gpoup {
+      .page-footer-links-group {
         width: 270px; }
-        .page-footer-links-gpoup:nth-of-type(4) {
+        .page-footer-links-group:nth-of-type(4) {
           margin-right: none; } }
   .page-footer-links dt {
     margin: 0 0 15px;

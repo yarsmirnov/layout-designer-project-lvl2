@@ -1,3 +1,13 @@
+.border-bottom {
+  border-bottom: 1px solid $white;
+
+  & > .container {
+    @media screen and ($desctop) {
+      padding: 0;
+    }
+  }
+}
+
 .page-footer {
   padding: 62px 0 40px;
   background-image: linear-gradient(
@@ -11,13 +21,18 @@
   }
 }
 
+
 .page-footer-links {
   margin: 0;
   padding: 0 0 43px;
-  border-bottom: 1px solid $white;
 
   @media screen and ($desctop) {
+    box-sizing: content-box;
+    padding: 0;
     padding-bottom: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   & > .container {
@@ -28,10 +43,9 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-
   }
 
-  &-gpoup {
+  &-group {
     margin-bottom: 31px;
 
     @media screen and ($desctop) {
